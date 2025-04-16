@@ -164,7 +164,9 @@ const Header = () => {
                     Gallery Post
                   </Link>
                 </div>
+                
               )}
+             
             </div>
 
             <button

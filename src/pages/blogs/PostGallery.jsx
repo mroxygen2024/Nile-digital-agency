@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 
+
 function PostGallery() {
   const blogPosts = [
     {
@@ -35,54 +36,35 @@ function PostGallery() {
         date: "May 10, 2021",
       },
     },
-    {
-      id: 4,
-      title: "10 Essential SEO Strategies Every Business Should Implement",
-      excerpt: "Boost your website's visibility with these proven search engine optimization techniques.",
-      image: "/images/blog-8.png",
-      author: {
-        name: "Emily Parker",
-        avatar: "/assets/author-3.png",
-        date: "May 8, 2021",
-      },
-    },
-    {
-      id: 5,
-      title: "Building a Successful Social Media Strategy for Small Businesses",
-      excerpt: "Learn how to leverage social platforms to increase brand awareness and drive customer engagement.",
-      image: "/assets/blog-9.png",
-      author: {
-        name: "Sarah Johnson",
-        avatar: "/assets/author-2.png",
-        date: "May 5, 2021",
-      },
-    },
-    {
-      id: 6,
-      title: "The Impact of AI on Modern Marketing Practices",
-      excerpt: "Understand how artificial intelligence is transforming customer targeting and personalization.",
-      image: "/assets/blog-3.png",
-      author: {
-        name: "Emily Parker",
-        avatar: "/assets/author-3.png",
-        date: "May 3, 2021",
-      },
-    },
+   
   ];
 
   return (
     <div>
-      <div className="px-6 py-24 bg-gray-900 header">
-        <nav className="flex">
-          <Link to="/">
-            <span className="pt-24 text-gray-400 hover:text-gray-300">Home</span>
-          </Link>
-          <span className="text-white pl-5 pt-24">.blog</span>
-        </nav>
-        <h1 className="text-5xl text-gray-200 font-bold w-3/5 mt-6">
-          eCommerce Marketing Statistics You Should Know in 2021.
-        </h1>
-      </div>
+    <div className="px-6 py-24 bg-gray-900 relative overflow-hidden header-with-circle">
+  <svg
+    className="absolute top-0 left-0 w-full h-full z-0 opacity-30 animate-snake"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="#4f46e5"
+      d="M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,165.3C672,171,768,181,864,192C960,203,1056,213,1152,186.7C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+    ></path>
+  </svg>
+
+  <nav className="flex relative z-10">
+    <span className="pt-24 text-gray-400 hover:text-gray-300">
+      <Link to="/">Home</Link>
+    </span>
+    <span className="text-white pl-5 pt-24">.blog</span>
+  </nav>
+  <h1 className="text-5xl text-gray-200 font-bold w-3/5 mt-6 relative z-10">
+    eCommerce Marketing Statistics You Should Know in 2021.
+  </h1>
+</div>
+
+
 
       <div className="container mx-auto px-6 py-12">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

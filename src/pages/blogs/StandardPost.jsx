@@ -3,18 +3,27 @@ import { Link } from "react-router-dom"
 function StandardPost() {
   return (
     <div className="container mx-auto px-4 py-8">
-      <div className="bg-gray-900 px-6 py-24 mb-12">
-        <nav className="flex">
-          
-            <span className="pt-24 text-gray-400 hover:text-gray-300 
-"><Link to="/">Home</Link></span>
-          
-          <span className="text-white pl-5 pt-24">.blog</span>
-        </nav>
-        <h1 className="text-5xl text-gray-200 font-bold w-3/5 mt-6">
-          eCommerce Marketing Statistics You Should Know in 2021.
-        </h1>
-      </div>
+     <div className="px-6 py-24 bg-gray-900 relative overflow-hidden header-with-circle">
+  <svg
+    className="absolute top-0 left-0 w-full h-full z-0 opacity-30 animate-snake"
+    viewBox="0 0 1440 320"
+    preserveAspectRatio="none"
+  >
+    <path
+      fill="#4f46e5"
+      d="M0,64L48,80C96,96,192,128,288,144C384,160,480,160,576,165.3C672,171,768,181,864,192C960,203,1056,213,1152,186.7C1248,160,1344,96,1392,64L1440,32L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+    ></path>
+  </svg>
+
+  <nav className="flex relative z-10">
+    <span className="pt-24 text-gray-400 hover:text-gray-300">
+      <Link to="/">Home</Link>
+    </span>
+    <span className="text-white pl-5 pt-24">.blog</span>
+  </nav>
+  <h1 className="text-5xl text-gray-200 font-bold w-3/5 mt-6 relative z-10">
+  eCommerce Marketing Statistics You Should Know in 2021.  </h1>
+</div>
 
       <div className="max-w-4xl mx-auto">
         <div className="flex items-center mb-8">
