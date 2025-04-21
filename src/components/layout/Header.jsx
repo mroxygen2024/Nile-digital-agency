@@ -129,7 +129,6 @@ const Header = () => {
               <button
                 className="text-gray-800 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-all duration-300 flex items-center"
                 onMouseEnter={() => setIsBlogDropdownOpen(true)}
-                onMouseLeave={() => setIsBlogDropdownOpen(false)}
               >
                 Blog
                 <svg
@@ -165,7 +164,9 @@ const Header = () => {
                     Gallery Post
                   </Link>
                 </div>
+                
               )}
+             
             </div>
 
             <button
