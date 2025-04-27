@@ -320,7 +320,7 @@ const Home = () => {
               Pioneering digital transformation in East Africa, we're your
               trusted partner for innovative technology solutions. From our base
               in the historic city of Harar, Ethiopia, we're building the future
-              of digital excellence.
+              of digital excellence solutions.
             </p>
             <div className="bg-gradient-to-r from-gray-900 to-blue-900 py-8">
               <div className="container mx-auto px-4">
