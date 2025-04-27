@@ -188,7 +188,7 @@ const Home = () => {
                 At Nile Technology Solutions, we're driven by innovation and
                 committed to delivering excellence. Our journey began with a
                 vision to transform businesses through cutting-edge technology
-                solutions.
+                solution.
               </p>
 
               {/* CEO Card with Glass Effect */}
