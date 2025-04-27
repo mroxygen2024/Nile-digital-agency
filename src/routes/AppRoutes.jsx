@@ -6,24 +6,24 @@ import Home from '../pages/Home'
 import Contact from '../pages/Contact'
 import PostGallery from '../pages/blogs/PostGallery'
 import StandardPost from '../pages/blogs/StandardPost'
-
+import Services from '../pages/Services'
+// import '../styles/App.css'  
 const AppRoutes = () => {
   return (
     <>
-          <Header />
-          
-              <Routes>
-              <Route path='/' element={<Home />} />
-              <Route path='/contact' element={<Contact/>} />
-              <Route path='/blog/gallery' element={<PostGallery />} />
-              <Route path='/blog/standard' element={<StandardPost />} />
+      <Header />
 
-              
-              </Routes>
-          
-          <Footer/>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/services" element={<Services />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/blog/gallery" element={<PostGallery />} />
+        <Route path="/blog/standard" element={<StandardPost />} />
+      </Routes>
+
+      <Footer />
     </>
-  )
+  );
 }
 
 export default AppRoutes
